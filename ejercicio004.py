@@ -1,23 +1,25 @@
 # Un número palindrómico se lee igual en ambos sentidos. El palíndromo más grande hecho del producto de dos números de 2 dígitos es 9009 = 91 × 99.
 # Encuentra el palíndromo más grande hecho del producto de dos números de 3 dígitos.
-# for numero1 in range(1,10):
-#     for numero2 in range(1,10):
-#         palindromo=numero1*numero2
-#         print(palindromo) 
-#         # if palindromo==
-def revertirNumero():
- 
-    n=4948
-
-    strNumero= str(n)
-    idx= len(strNumero)-1
-    reverso=[]
-    # reverso.append(n)
-    while (idx >= 0):
-      reverso.append(strNumero[idx])
-      idx = idx - 1
-
-    print(reverso)
-
+def producto():
+    for numero1 in range (100,1000):
+        for numero2 in range(100,1000):
+            producto=numero1*numero2
+            if palindromo(producto) is True:
+                # print(f"el primer numero es: {numero1} el segundo numero es :  {numero2}")
+                rpta=producto
+                nro1=numero1
+                nro2=numero2
+    return print(f"la respuesta es: {rpta} producto de {nro1} y {nro2}")
     
-revertirNumero()
+    
+def palindromo(numero):
+    numero=numero
+    # revNumero=[]
+    listNumero = list(str(numero))
+    numero=list(str(numero))
+    listNumero.reverse()
+    if numero == listNumero:
+        return True
+    else:
+        return False
+producto()
