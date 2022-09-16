@@ -4,7 +4,7 @@
 # (1+2+3+4+...+10)^2=3025
 # Por tanto, la diferencia entre la suma de los cuadrados de los diez primeros números naturales y el cuadrado de la suma es:
 #  3025-385=2640
-# Encuentra la diferencia entre la suma de los cuadrados de los primeros cien números naturales y el cuadrado de la suma. 
+# Encuentra la diferencia entre la suma de los asdfasdfasdfcuadrados de los primeros cien números naturales y el cuadrado de la suma. 
 def sumaCuadrados():
     sumaCuadrados=0
     for nro in range(1,11):
